@@ -1,0 +1,484 @@
+*,*::after,*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+li {
+    list-style: none;
+}
+
+
+/*Mobile styles*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+
+    /*Navbar styles*/
+    header{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 15px;
+        gap: 5px;
+        width: 100%;
+        height: 10vh;
+    }
+
+    .main-navigation nav .hamburger-menu {
+        position: absolute;
+        top: 50px;
+        right: -100px;
+        width: 100%;
+    }
+
+    .main-navigation nav ul li {
+        list-style: none;
+        background-color: aquamarine;
+    }
+
+
+    #logo-img {
+        left: 5%;
+    }
+
+
+    #logo-img img{
+        width: 180px;
+        height: 25px;
+    }
+    .nav-list-wrapper{
+        display: none;
+        transition: all .2s ease-in;
+    }
+
+    .nav-list-wrapper.active {
+        position: absolute;
+        display: flex;
+        width: 50%;
+        height: 30vh;
+        background-color: rgb(255, 255, 255);
+        top: 10vh;
+        right: 0;
+        transition: all .2s ease-in;
+    }
+
+    .nav-list-wrapper.active ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        transition: all .2s ease-in;
+        width: 100%;
+
+    }
+
+    .nav-list-wrapper.active ul li {
+        display: flex;
+        align-items: center;
+        background-color: rgba(240, 248, 255, 0);
+        width: 100%;
+        padding-left: 25px;
+        font-size: 25px;
+        color: rgb(8, 8, 8);
+        height: 100%;
+        transition: all .2s ease-in;
+    }
+
+    .nav-list-wrapper.active ul li:hover {
+
+        background-color: black;
+        color: white;
+        width: 100%;
+
+    }
+
+    .main-navigation nav {
+        background-color: rgb(0, 0, 0);
+        min-width: 50px;
+        min-width: 50px;
+        z-index: 999;
+    }
+
+    .hamburger-menu {
+        position: relative;
+        cursor: pointer;
+        right: 15%;
+        top: -5px;
+        transition: all 1s ease-in;
+        background-color: yellowgreen;
+    }
+
+    .bar{
+        position: absolute;
+        background-color: rgb(0, 0, 0);
+        height: 5px;
+        width: 35px;
+        border-radius: 5px;
+        transition: all .2s ease-in;
+    }
+
+    .bar:nth-child(1)
+    {
+        top: -10px;
+    }
+
+    .bar:nth-child(3)
+    {
+        top: 10px;
+    }
+
+   .hamburger-menu.active .bar:nth-child(1)
+    {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+   .hamburger-menu.active .bar:nth-child(2)
+    {
+        opacity: 0;
+    }
+
+    .hamburger-menu.active .bar:nth-child(3){
+        transform: rotate(-45deg);
+        top:0;
+    }
+
+    /* Hero section styles */
+
+    .hero-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: yellowgreen ;
+        height: 90vh;
+        background: url('./images/pexels-fernando-arcos-204427.jpg') center/cover no-repeat;
+
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(95, 158, 160, 0.432);
+        height: 80%;
+        width: 90%;
+    }
+
+    .hero-content h1 {
+        font-size: 3.5rem;
+        text-align: center;
+        color: rgb(85, 67, 7);
+        margin-bottom: 5%;
+        max-width: 80%;
+    }
+
+    .hero-content p{
+        font-size: 20px;
+        margin: 5%;
+        color: rgb(223, 218, 211);
+        margin-bottom: 10%;
+        background-color: rgba(0, 0, 0, 0.075);
+        padding: 5px 6px;
+
+    }
+
+    .hero-content button  {
+        background-color: black;
+        color: white;
+        height: 50px;
+        width: 150px;
+        font-size:  25px;
+        font-weight: 700;
+        border-radius: 5px;
+        align-self: center;
+        border: none;
+    }
+
+    /*Highlight section styles */
+
+    .highlight {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 8vh 4vw;
+        height: 120vh;
+
+    }
+
+    .highlights-wrapper {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: start;
+        justify-items: center;
+        gap: 20px;
+        width: 100%;
+        padding: 3vh 2vw;
+    }
+
+    .highlight-image-wrapper {
+        height: 30vh;
+        margin-bottom: 10px;
+    }
+
+  .product-1
+  {
+
+        background: url("./images/pexels-irina-iriser-916344.jpg") center/cover no-repeat;
+    }
+
+    .product-2 {
+
+        background: url("./images/pexels-leah-kelley-691046.jpg") center/cover no-repeat;
+    }
+
+    .product-3 {
+
+        background: url("./images/pexels-lalesh-aldarwish-168927.jpg") center/cover no-repeat;
+        background-position: -330px -0px;
+    }
+    .product-4 {
+
+        background: url("./images/pexels-alex-azabache-3766111.jpg") center/cover no-repeat;
+
+    }
+
+    .highlight-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .highlight-description {
+
+        font-size: 13px;
+    }
+
+    .highlight-details {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+
+        height: 60%;
+    }
+
+    .highlight-details .highlight-description {
+
+        font-size: 16px;
+        margin-bottom: 1.5em;
+
+    }
+
+    .highlight-button {
+
+        background-color: black;
+        height: 25px;
+        color: white;
+        width: 100px;
+        border-radius: 2px;
+        border: none;
+    }
+
+
+    /* Feature products section */
+
+    .featured-product {
+        display: flex;
+        align-items: center;
+        background-color: teal;
+        height: 80vh;
+        background: url("./images/pexels-kristina-polianskaia-4241706.jpg") center/cover no-repeat;
+        padding: 2vh 3vw;
+
+    }
+
+    .feature-product-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.596);
+        width: 85%;
+        padding: 2vh 3vw;
+        height: 80%;
+    }
+
+    .featured-product-title {
+        width: 100%;
+        margin-bottom: .5rem;
+    }
+
+    .featured-product-title p{
+        color: wheat;
+        font-size: 50px;
+    }
+
+    .featured-product-description {
+        padding: 10px 15px;
+        color: wheat;
+        margin-bottom: 1.5rem;
+    }
+
+    .featured-product-description span > p {
+        font-size: 25px;
+        color:white;
+        background-color: rgba(255, 255, 255, 0.267);
+        height: 10vh;
+        text-align: center;
+        padding: 5px;
+        margin-top: 2rem;
+    }
+
+    /*Testimonial section */
+
+    .testimonials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 60vh;
+        padding: 5vh 4vw;
+    }
+
+    .testimonial-container {
+        height: 45vh;
+
+    }
+
+    .testimonial-content {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        padding: 4vh 6vw;
+        height: 30vh;
+        background-color: rgba(0, 0, 0, 0.041);
+    }
+
+    .testimonial-message  {
+        color: rgb(0, 0, 0);
+        font-weight: 400;
+    }
+
+    .testimonial-profile {
+
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .testimonial-profile-image img {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        border: 1px solid rgb(179, 177, 177);
+    }
+
+    .testimonial-profile-details {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-around;
+        padding: 2vh 6vw;
+        height: 5vh;
+        width: 100%;
+
+    }
+
+    .testimonial-profile-details p {
+        padding: 0;
+        margin: 0;
+    }
+
+    .testimonial-profile-title {
+        color: black;
+        font-size: 20px;
+        font-weight: 700;
+
+    }
+
+    .review-line  {
+        width: 100%;
+    }
+
+    /*about styles*/
+
+    .about {
+        background: url('./images/pexels-solodsha-8105116.jpg') center/cover no-repeat;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.541);
+        height: 80%;
+        width: 80%;
+    }
+
+    .about-message {
+        padding: 2vh 4vw;
+        color: white;
+
+    }
+
+    /* footer styles*/
+
+    .main-footer {
+        background-color: black;
+
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 4vh;
+    }
+
+    .footer-logo {
+        width: 300px;
+        height: auto;
+        margin-bottom: 2vh;
+    }
+
+    .footer-logo img {
+        width: 100%;
+    }
+
+    .footer-details {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+        text-wrap:balance;
+        padding: 2vh 3vw;
+    }
+    .newsletter {
+        width: 80%;
+    }
+
+
+
+
+
+}
