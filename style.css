@@ -174,7 +174,7 @@ li {
         background-color: yellowgreen ;
         height: 95vh;
         background: url('./images/pexels-fernando-arcos-204427.jpg') center/cover no-repeat;
-
+        margin-bottom: 25vh;
     }
 
     .hero-content {
@@ -183,12 +183,12 @@ li {
         align-items: center;
         justify-content: center;
         background-color: rgba(95, 158, 160, 0.432);
-        height: 80%;
+        height: 60%;
         width: 90%;
     }
 
     .hero-content h1 {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         text-align: center;
         color: rgb(85, 67, 7);
         margin-bottom: 5%;
@@ -196,7 +196,7 @@ li {
     }
 
     .hero-content p{
-        font-size: 20px;
+        font-size: 15px;
         margin: 5%;
         color: rgb(223, 218, 211);
         margin-bottom: 10%;
@@ -208,9 +208,9 @@ li {
     .hero-content button  {
         background-color: black;
         color: white;
-        height: 50px;
-        width: 150px;
-        font-size:  25px;
+        height: 30px;
+        width: 100px;
+        font-size:  15px;
         font-weight: 700;
         border-radius: 5px;
         align-self: center;
@@ -228,7 +228,7 @@ li {
         height: 120vh;
         padding: 10vh 0;
         margin-top: 10vh;
-        margin-bottom: 10vh;
+        margin-bottom: 30vh;
         padding: 4vh 5vw;
 
     }
@@ -344,17 +344,18 @@ li {
 
     .featured-product-title p{
         color: wheat;
-        font-size: 50px;
+        font-size: 30px;
     }
 
     .featured-product-description {
+        font-size: 12px;
         padding: 10px 15px;
         color: wheat;
         margin-bottom: 1.5rem;
     }
 
     .featured-product-description span > p {
-        font-size: 25px;
+        font-size: 20px;
         color:white;
         background-color: rgba(255, 255, 255, 0.267);
         height: 10vh;
@@ -546,9 +547,7 @@ li {
 
 }
 
-
 /* Tablets and medius sized screens */
-
 @media only screen and (min-width: 481px) and (max-width: 768px) {
 
 
@@ -844,7 +843,7 @@ li {
         background-color: teal;
         height: 95vh;
         background: url("./images/pexels-kristina-polianskaia-4241706.jpg") center/cover no-repeat;
-        padding: 2vh 3vw;
+        padding: 4vh 3vw;
 
     }
 
@@ -893,30 +892,38 @@ li {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 60vh;
-        padding: 5vh 4vw;
+        height: 110vh;
         margin-top: 2vh;
         margin-bottom: 5vh;
     }
 
+
     .testimonial-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center !important;
         height: 45vh;
+        width: 80%;
 
     }
 
     .testimonial-content {
         display: flex;
         flex-direction: column;
-        align-items: start;
+        align-items: center;
         justify-content: center;
         padding: 4vh 6vw;
-        height: 30vh;
+        height: 45vh;
         background-color: rgba(0, 0, 0, 0.041);
+        margin-top: 5vh;
+        width:100%;
     }
 
     .testimonial-message  {
         color: rgb(0, 0, 0);
         font-weight: 400;
+        font-size: 18px;
     }
 
     .testimonial-profile {
@@ -984,6 +991,7 @@ li {
     .about-message {
         padding: 2vh 6vw;
         color: white;
+        font-size: 14px;
 
     }
 
@@ -1007,7 +1015,7 @@ li {
     }
 
     .newsletter-wrapper form label {
-        font-size: 35px;
+        font-size: 25px;
         font-weight: 900;
 
     }
@@ -1022,11 +1030,11 @@ li {
     .newsletter-button {
         border: none;
         margin-top: .6rem;
-        width: 120px;
-        height: 40px;
+        width: 100px;
+        height: 5vh;
         color: white;
         background-color: black;
-        font-size: 1.3rem;
+        font-size: 1rem;
         border-radius: 2px;
     }
 
@@ -1089,7 +1097,7 @@ li {
             padding: 20px 10px;
             gap: 5px;
             width: 100%;
-            height: 15vh;
+            height: 18vh;
         }
 
         .main-navigation nav ul li ,  .main-navigation nav ul li a{
@@ -1162,25 +1170,18 @@ li {
             font-size: 18px;
             color: rgb(8, 8, 8);
             height: 100%;
-
             transition: all .2s ease-in;
             padding: 5px;
         }
 
         .nav-list-wrapper ul li:hover {
-
             background-color: black;
             color: white;
             width: 100%;
             border-radius: 3px;
         }
 
-
-
-
-
          /* Hero section styles */
-
          .hero-section {
             display: flex;
             align-items: center;
@@ -1300,19 +1301,15 @@ li {
             flex-direction: column;
             align-items: start;
             justify-content: space-between;
-
             height: 60%;
         }
 
         .highlight-details .highlight-description {
-
             font-size: 16px;
             margin-bottom: 1.5em;
-
         }
 
         .highlight-button {
-
             background-color: black;
             height: 35px;
             color: white;
@@ -1331,7 +1328,6 @@ li {
             height: 100vh;
             background: url("./images/pexels-kristina-polianskaia-4241706.jpg") center/cover no-repeat;
             padding: 2vh 3vw;
-
         }
 
         .feature-product-content {
@@ -1353,18 +1349,18 @@ li {
 
         .featured-product-title p{
             color: wheat;
-            font-size: 85px;
+            font-size: 45px;
         }
 
         .featured-product-description {
             padding: 10px 15px;
             color: wheat;
             margin-bottom: 2rem;
-            font-size: 25px;
+            font-size: 20px;
         }
 
         .featured-product-description span > p {
-            font-size: 60px;
+            font-size: 40px;
             color:white;
             background-color: rgba(255, 255, 255, 0.267);
             height: 20vh;
@@ -1380,14 +1376,19 @@ li {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 60vh;
-            padding: 5vh 4vw;
+            height: 110vh;
             margin-top: 2vh;
             margin-bottom: 5vh;
         }
 
+
         .testimonial-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center !important;
+            justify-content: center !important;
             height: 45vh;
+            width: 60%;
 
         }
 
@@ -1397,15 +1398,16 @@ li {
             align-items: center;
             justify-content: center;
             padding: 4vh 6vw;
-            height: 30vh;
+            height: 40vh;
             background-color: rgba(0, 0, 0, 0.041);
+            margin-top: 5vh;
             width:100%;
         }
 
         .testimonial-message  {
             color: rgb(0, 0, 0);
             font-weight: 400;
-            font-size: 25px;
+            font-size: 20px;
         }
 
         .testimonial-profile {
@@ -1450,6 +1452,7 @@ li {
             width: 100%;
         }
 
+
          /*about styles*/
 
          .about {
@@ -1473,7 +1476,7 @@ li {
         .about-message {
             padding: 2vh 6vw;
             color: white;
-            font-size: 25px;
+            font-size: 18px;
 
         }
 
@@ -1578,7 +1581,7 @@ li {
             padding: 20px 10px;
             gap: 5px;
             width: 100%;
-            height: 15vh;
+            height: 18vh;
         }
 
         .main-navigation nav ul li ,  .main-navigation nav ul li a{
@@ -1651,7 +1654,6 @@ li {
             font-size: 18px;
             color: rgb(8, 8, 8);
             height: 100%;
-
             transition: all .2s ease-in;
             padding: 5px;
         }
@@ -1842,7 +1844,7 @@ li {
 
         .featured-product-title p{
             color: wheat;
-            font-size: 85px;
+            font-size: 65px;
         }
 
         .featured-product-description {
@@ -1869,14 +1871,19 @@ li {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 60vh;
-            padding: 5vh 4vw;
+            height: 110vh;
             margin-top: 2vh;
             margin-bottom: 5vh;
         }
 
+
         .testimonial-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center !important;
+            justify-content: center !important;
             height: 45vh;
+            width: 60%;
 
         }
 
@@ -1886,15 +1893,16 @@ li {
             align-items: center;
             justify-content: center;
             padding: 4vh 6vw;
-            height: 30vh;
+            height: 40vh;
             background-color: rgba(0, 0, 0, 0.041);
+            margin-top: 5vh;
             width:100%;
         }
 
         .testimonial-message  {
             color: rgb(0, 0, 0);
             font-weight: 400;
-            font-size: 25px;
+            font-size: 20px;
         }
 
         .testimonial-profile {
@@ -1962,7 +1970,7 @@ li {
         .about-message {
             padding: 2vh 6vw;
             color: white;
-            font-size: 25px;
+            font-size: 20px;
 
         }
 
@@ -2066,7 +2074,7 @@ li {
             padding: 20px 10px;
             gap: 5px;
             width: 100%;
-            height: 15vh;
+            height: 18vh;
         }
 
         .main-navigation nav ul li ,  .main-navigation nav ul li a{
@@ -2162,7 +2170,7 @@ li {
             display: flex;
             align-items: center;
             justify-content: start;
-            background-color: yellowgreen ;
+            background-color: rgb(255, 255, 255) ;
             height: 85vh;
             background: url('./images/pexels-fernando-arcos-204427.jpg') center/cover no-repeat;
             margin-bottom: 20vh;
@@ -2180,20 +2188,21 @@ li {
         }
 
         .hero-content h1 {
-            font-size: 3.5rem;
+            font-size: 4.5rem;
             text-align: center;
-            color: rgb(85, 67, 7);
+            color: rgb(255, 255, 255);
             margin-bottom: 1%;
             max-width: 80%;
         }
 
         .hero-content p{
-            font-size: 25px;
+            font-size: 24px;
             margin: 5%;
             color: rgb(223, 218, 211);
             margin-bottom: 5%;
             background-color: rgba(0, 0, 0, 0.075);
-            padding: 5px 6px;
+            padding: 4vh 2vw;
+            height: 25vh;
 
         }
 
@@ -2269,7 +2278,7 @@ li {
 
         .highlight-description {
 
-            font-size: 13px;
+            font-size: 18px;
         }
 
         .highlight-details {
@@ -2357,14 +2366,19 @@ li {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 60vh;
-            padding: 5vh 4vw;
+            height: 110vh;
             margin-top: 2vh;
             margin-bottom: 5vh;
         }
 
+
         .testimonial-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center !important;
+            justify-content: center !important;
             height: 45vh;
+            width: 60%;
 
         }
 
@@ -2374,15 +2388,16 @@ li {
             align-items: center;
             justify-content: center;
             padding: 4vh 6vw;
-            height: 30vh;
+            height: 40vh;
             background-color: rgba(0, 0, 0, 0.041);
+            margin-top: 5vh;
             width:100%;
         }
 
         .testimonial-message  {
             color: rgb(0, 0, 0);
             font-weight: 400;
-            font-size: 25px;
+            font-size: 20px;
         }
 
         .testimonial-profile {
@@ -2450,7 +2465,7 @@ li {
         .about-message {
             padding: 2vh 6vw;
             color: white;
-            font-size: 25px;
+            font-size: 20px;
 
         }
 
