@@ -81,6 +81,7 @@ li {
         justify-content: space-around;
         transition: all .2s ease-in;
         width: 100%;
+        padding: 0;
 
     }
 
@@ -162,7 +163,7 @@ li {
         align-items: center;
         justify-content: center;
         background-color: yellowgreen ;
-        height: 90vh;
+        height: 95vh;
         background: url('./images/pexels-fernando-arcos-204427.jpg') center/cover no-repeat;
 
     }
@@ -216,6 +217,9 @@ li {
         justify-content: center;
         padding: 8vh 4vw;
         height: 120vh;
+        padding: 10vh 0;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
 
     }
 
@@ -315,6 +319,7 @@ li {
         width: 85%;
         padding: 2vh 3vw;
         height: 80%;
+        margin-bottom: 15vh;
     }
 
     .featured-product-title {
@@ -352,6 +357,8 @@ li {
         justify-content: center;
         height: 60vh;
         padding: 5vh 4vw;
+        margin-top: 5vh;
+        margin-bottom: 10vh;
     }
 
     .testimonial-container {
@@ -424,6 +431,7 @@ li {
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-bottom: 5vh;
     }
 
     .about-content {
@@ -473,8 +481,43 @@ li {
         text-wrap:balance;
         padding: 2vh 3vw;
     }
+
+    /*Newsletter styles*/
     .newsletter {
-        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 40vh;
+    }
+
+    .newsletter-wrapper form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter-wrapper form label {
+        font-size: 25px;
+        font-weight: 900;
+
+    }
+
+    .newsletter-wrapper form input {
+        width: 90%;
+        border: 1px solid black;
+        height: 40px;
+        padding: 15px;
+        border-radius: 3px;
+    }
+    .newsletter-button {
+        border: none;
+        margin-top: .6rem;
+        width: 120px;
+        height: 40px;
+        color: white;
+        background-color: black;
+        border-radius: 2px;
     }
 
 
