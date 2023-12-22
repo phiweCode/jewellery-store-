@@ -63,6 +63,15 @@ li {
         transition: all .2s ease-in;
     }
 
+    .nav-listing li a{
+        text-decoration: none;
+        color: black;
+    }
+    .nav-listing li a:hover{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+
     .nav-list-wrapper.active {
         position: absolute;
         display: flex;
@@ -518,6 +527,11 @@ li {
         color: white;
         background-color: black;
         border-radius: 2px;
+    }
+
+    .Navigations nav ul li a, .contact-information ul li ,.contact-information ul li p a, .social-icons ul li a  {
+        text-decoration: none;
+        color: white;
     }
 
 
