@@ -94,6 +94,17 @@ li {
 
     }
 
+    .nav-list-wrapper.active {
+        position: absolute;
+        display: flex;
+        width: 50%;
+        height: 38vh;
+        background-color: rgb(255, 255, 255);
+        top: 10vh;
+        right: 0;
+        transition: all .2s ease-in;
+    }
+
     .nav-list-wrapper.active ul li {
         display: flex;
         align-items: center;
@@ -371,30 +382,38 @@ li {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 60vh;
-        padding: 5vh 4vw;
-        margin-top: 5vh;
-        margin-bottom: 10vh;
+        height: 110vh;
+        margin-top: 2vh;
+        margin-bottom: 5vh;
     }
 
+
     .testimonial-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center !important;
         height: 45vh;
+        width: 90%;
 
     }
 
     .testimonial-content {
         display: flex;
         flex-direction: column;
-        align-items: start;
+        align-items: center;
         justify-content: center;
         padding: 4vh 6vw;
-        height: 30vh;
+        height: 45vh;
         background-color: rgba(0, 0, 0, 0.041);
+        margin-top: 5vh;
+        width:100%;
     }
 
     .testimonial-message  {
         color: rgb(0, 0, 0);
         font-weight: 400;
+        font-size: 14px;
     }
 
     .testimonial-profile {
@@ -439,6 +458,7 @@ li {
         width: 100%;
     }
 
+
     /*about styles*/
 
     .about {
@@ -462,12 +482,17 @@ li {
     .about-message {
         padding: 2vh 4vw;
         color: white;
+        font-size: 12px;
 
     }
 
     /* footer styles*/
 
     .main-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         background-color: black;
 
     }
@@ -514,7 +539,7 @@ li {
     }
 
     .newsletter-wrapper form label {
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 900;
 
     }
@@ -529,7 +554,7 @@ li {
     .newsletter-button {
         border: none;
         margin-top: .6rem;
-        width: 120px;
+        width: 100px;
         height: 40px;
         color: white;
         background-color: black;
@@ -603,7 +628,7 @@ li {
         position: absolute;
         display: flex;
         width: 50%;
-        height: 30vh;
+        height: 38vh;
         background-color: rgb(255, 255, 255);
         top: 10vh;
         right: 0;
