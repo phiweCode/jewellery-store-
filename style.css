@@ -382,7 +382,7 @@ li {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 110vh;
+        height: 90vh;
         margin-top: 2vh;
         margin-bottom: 5vh;
     }
@@ -394,7 +394,7 @@ li {
         align-items: center !important;
         justify-content: center !important;
         height: 45vh;
-        width: 90%;
+        width: 80%;
 
     }
 
@@ -494,6 +494,9 @@ li {
         align-items: center;
         justify-content: center;
         background-color: black;
+        padding-bottom: 5vh;
+        padding: 4vh 8vw;
+        text-align: center;
 
     }
 
@@ -523,6 +526,10 @@ li {
         padding: 2vh 3vw;
     }
 
+    .contact-information {
+        padding: 0vh 3vw;
+    }
+
     /*Newsletter styles*/
     .newsletter {
         display: flex;
@@ -539,13 +546,13 @@ li {
     }
 
     .newsletter-wrapper form label {
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 900;
 
     }
 
     .newsletter-wrapper form input {
-        width: 100%;
+        width: 80%;
         border: 1px solid black;
         height: 40px;
         padding: 15px;
@@ -564,6 +571,8 @@ li {
     .Navigations nav ul li a, .contact-information ul li ,.contact-information ul li p a, .social-icons ul li a  {
         text-decoration: none;
         color: white;
+        font-size: 12px;
+        text-align: start !important;
     }
 
 
